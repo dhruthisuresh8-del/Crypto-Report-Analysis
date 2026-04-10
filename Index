@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gold vs. Code Standard | Crypto in Modern Portfolios</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="ticker-tape">
+      <span>BTC &nbsp;↑ 0.35%&nbsp;&nbsp;|&nbsp;&nbsp; ETH &nbsp;↑ 0.42%&nbsp;&nbsp;|&nbsp;&nbsp; GOLD &nbsp;↑ 0.06%&nbsp;&nbsp;|&nbsp;&nbsp; S&P500 &nbsp;↑ 0.08%&nbsp;&nbsp;|&nbsp;&nbsp; BTC &nbsp;↑ 0.35%&nbsp;&nbsp;|&nbsp;&nbsp; ETH &nbsp;↑ 0.42%&nbsp;&nbsp;|&nbsp;&nbsp; GOLD &nbsp;↑ 0.06%&nbsp;&nbsp;|&nbsp;&nbsp; S&P500 &nbsp;↑ 0.08%</span>
+    </div>
+    <div class="hero-content">
+      <p class="hero-label">Master of Finance · S4103956</p>
+      <h1 class="hero-title">
+        <span class="gold-text">Gold Standard</span><br/>
+        <em>vs.</em><br/>
+        <span class="code-text">Code Standard</span>
+      </h1>
+      <p class="hero-sub">Decoding Crypto's Place in Modern Portfolios</p>
+      <p class="hero-author">Dhruthi Suresh &nbsp;·&nbsp; June 2023 – January 2025</p>
+    </div>
+    <div class="scroll-hint">↓ scroll</div>
+  </header>
+
+  <main>
+
+    <!-- EXECUTIVE SUMMARY -->
+    <section class="section" id="summary">
+      <div class="section-label">01 &mdash; Executive Summary</div>
+      <div class="two-col">
+        <div class="col-wide">
+          <h2>Bitcoin as Digital Gold?<br/><em>The Evidence Says Otherwise.</em></h2>
+          <p>This report investigates the claim of Bitcoin as "digital Gold" by quantitatively examining price correlations, Value at Risk metrics, probability behaviors, and hypothesis testing across Bitcoin, Gold, Ethereum, and the S&amp;P 500 over the period June 2023 to January 2025.</p>
+          <p>Quantitative analysis confirms that while cryptocurrencies offer high returns, they introduce substantial risk. Correlation matrices highlight significant co-movement between Bitcoin and Ethereum but weaker relationships with Gold — contradicting the expectation of safe-haven characteristics.</p>
+        </div>
+        <div class="col-narrow">
+          <div class="callout">
+            <p class="callout-label">Key Finding</p>
+            <p class="callout-text">Bitcoin's correlation with Gold is only <strong>0.71</strong>, while its correlation with Ethereum is <strong>0.96</strong> — revealing it behaves more like a speculative asset than a safe haven.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESCRIPTIVE STATS -->
+    <section class="section dark" id="stats">
+      <div class="section-label">02 &mdash; Descriptive Statistics</div>
+      <h2>Risk &amp; Return at a Glance</h2>
+      <p class="section-intro">Daily return data from June 2023 to January 2025 reveals the starkly different risk profiles of traditional and digital assets.</p>
+      <div class="stats-grid">
+        <div class="stat-card gold-card">
+          <div class="asset-name">GOLD</div>
+          <div class="stat-row"><span>Mean Return</span><span class="val">0.000586</span></div>
+          <div class="stat-row"><span>Std. Dev</span><span class="val">0.01883</span></div>
+          <div class="stat-row"><span>Skewness</span><span class="val">−0.002</span></div>
+          <div class="stat-row"><span>Kurtosis</span><span class="val">3.04</span></div>
+          <div class="risk-bar-wrap"><div class="risk-bar" style="width:25%"></div><span class="risk-label">Low Volatility</span></div>
+        </div>
+        <div class="stat-card sp-card">
+          <div class="asset-name">S&amp;P 500</div>
+          <div class="stat-row"><span>Mean Return</span><span class="val">0.000809</span></div>
+          <div class="stat-row"><span>Std. Dev</span><span class="val">0.01359</span></div>
+          <div class="stat-row"><span>Skewness</span><span class="val">−0.66</span></div>
+          <div class="stat-row"><span>Kurtosis</span><span class="val">5.97</span></div>
+          <div class="risk-bar-wrap"><div class="risk-bar" style="width:20%"></div><span class="risk-label">Low Volatility</span></div>
+        </div>
+        <div class="stat-card btc-card">
+          <div class="asset-name">BITCOIN</div>
+          <div class="stat-row"><span>Mean Return</span><span class="val">0.003491</span></div>
+          <div class="stat-row"><span>Std. Dev</span><span class="val">0.03090</span></div>
+          <div class="stat-row"><span>Skewness</span><span class="val">0.39</span></div>
+          <div class="stat-row"><span>Kurtosis</span><span class="val">3.60</span></div>
+          <div class="risk-bar-wrap"><div class="risk-bar" style="width:80%"></div><span class="risk-label">High Volatility</span></div>
+        </div>
+        <div class="stat-card eth-card">
+          <div class="asset-name">ETHEREUM</div>
+          <div class="stat-row"><span>Mean Return</span><span class="val">0.003685</span></div>
+          <div class="stat-row"><span>Std. Dev</span><span class="val">0.03124</span></div>
+          <div class="stat-row"><span>Skewness</span><span class="val">0.42</span></div>
+          <div class="stat-row"><span>Kurtosis</span><span class="val">4.11</span></div>
+          <div class="risk-bar-wrap"><div class="risk-bar" style="width:85%"></div><span class="risk-label">High Volatility</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORRELATION -->
+    <section class="section" id="correlation">
+      <div class="section-label">03 &mdash; Correlation Analysis</div>
+      <h2>How Assets Move Together</h2>
+      <p class="section-intro">The correlation matrix below exposes Bitcoin's true identity — tightly bound to Ethereum, loosely tied to Gold.</p>
+      <div class="heatmap-wrap">
+        <table class="heatmap">
+          <thead>
+            <tr><th></th><th>Gold</th><th>S&amp;P 500</th><th>ETH</th><th>BTC</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Gold</th>
+              <td class="c100">1.00</td>
+              <td class="c81">0.81</td>
+              <td class="c73">0.73</td>
+              <td class="c71">0.71</td>
+            </tr>
+            <tr>
+              <th>S&amp;P 500</th>
+              <td class="c81">0.81</td>
+              <td class="c100">1.00</td>
+              <td class="c86">0.86</td>
+              <td class="c83">0.83</td>
+            </tr>
+            <tr>
+              <th>ETH</th>
+              <td class="c73">0.73</td>
+              <td class="c86">0.86</td>
+              <td class="c100">1.00</td>
+              <td class="c96">0.96</td>
+            </tr>
+            <tr>
+              <th>BTC</th>
+              <td class="c71">0.71</td>
+              <td class="c83">0.83</td>
+              <td class="c96">0.96</td>
+              <td class="c100">1.00</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="heatmap-note">Darker cells = stronger correlation. BTC–ETH at 0.96 reveals their shared speculative nature.</p>
+      </div>
+    </section>
+
+    <!-- PROBABILITY -->
+    <section class="section dark" id="probability">
+      <div class="section-label">04 &mdash; Probability Analysis</div>
+      <h2>Chances of a Positive Day</h2>
+      <div class="prob-grid">
+        <div class="prob-item">
+          <div class="prob-circle btc-ring">
+            <span class="prob-pct">52.6%</span>
+          </div>
+          <p class="prob-name">Bitcoin</p>
+        </div>
+        <div class="prob-item">
+          <div class="prob-circle sp-ring">
+            <span class="prob-pct">52.6%</span>
+          </div>
+          <p class="prob-name">S&amp;P 500</p>
+        </div>
+        <div class="prob-item">
+          <div class="prob-circle gold-ring">
+            <span class="prob-pct">52.6%</span>
+          </div>
+          <p class="prob-name">Gold</p>
+        </div>
+      </div>
+      <div class="conditional-wrap">
+        <h3>Conditional Probabilities</h3>
+        <div class="cond-row">
+          <span class="cond-label">P(BTC↓ | Gold↓)</span>
+          <div class="cond-bar-outer"><div class="cond-bar" style="width:47.4%"></div></div>
+          <span class="cond-val">47.4%</span>
+        </div>
+        <div class="cond-row">
+          <span class="cond-label">P(ETH↑ | S&amp;P↓)</span>
+          <div class="cond-bar-outer"><div class="cond-bar eth-bar" style="width:28.5%"></div></div>
+          <span class="cond-val">28.5%</span>
+        </div>
+        <p class="cond-note">Bitcoin's near-50% chance of falling with Gold signals a weak safe-haven relationship. Ethereum rarely rises when markets fall.</p>
+      </div>
+    </section>
+
+    <!-- VAR -->
+    <section class="section" id="var">
+      <div class="section-label">05 &mdash; Value at Risk</div>
+      <h2>Portfolio Risk: 75% Gold, 25% Bitcoin</h2>
+      <p class="section-intro">Over 252 business days, both VaR methods converge on similar — and sobering — downside exposure figures.</p>
+      <div class="var-table-wrap">
+        <table class="var-table">
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>VaR 95% (AUD)</th>
+              <th>VaR 99% (AUD)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Historical Simulation</td>
+              <td class="var-val">$3,056.46</td>
+              <td class="var-val high">$4,259.47</td>
+            </tr>
+            <tr>
+              <td>Variance-Covariance</td>
+              <td class="var-val">$3,057.04</td>
+              <td class="var-val high">$4,260.01</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="var-note">At 99% confidence, this portfolio risks losing over <strong>AUD 4,200</strong>. Bitcoin's inclusion as just 25% of holdings materially elevates overall portfolio risk.</p>
+      </div>
+    </section>
+
+    <!-- HYPOTHESIS -->
+    <section class="section dark" id="hypothesis">
+      <div class="section-label">06 &mdash; Hypothesis Testing</div>
+      <h2>Are Bitcoin and Gold Returns Truly Different?</h2>
+      <div class="hyp-wrap">
+        <div class="hyp-box">
+          <p class="hyp-label">H₀ (Null)</p>
+          <p>Mean returns of Bitcoin and Gold are <strong>equal</strong></p>
+        </div>
+        <div class="hyp-box alt">
+          <p class="hyp-label">H₁ (Alternative)</p>
+          <p>Mean returns of Bitcoin and Gold are <strong>not equal</strong></p>
+        </div>
+      </div>
+      <div class="result-wrap">
+        <div class="result-item">
+          <span class="result-num">1.577</span>
+          <span class="result-name">t-statistic</span>
+        </div>
+        <div class="result-item">
+          <span class="result-num">0.115</span>
+          <span class="result-name">p-value</span>
+        </div>
+        <div class="result-item verdict">
+          <span class="result-num">Fail to<br/>Reject H₀</span>
+          <span class="result-name">at α = 0.05</span>
+        </div>
+      </div>
+      <p class="hyp-note">Since p = 0.115 &gt; 0.05, there is insufficient evidence to conclude the mean returns significantly differ — though this does not imply equivalence in risk profile.</p>
+    </section>
+
+    <!-- CONCLUSION -->
+    <section class="section" id="conclusion">
+      <div class="section-label">07 &mdash; Conclusion & Recommendations</div>
+      <h2>The Verdict</h2>
+      <div class="verdict-grid">
+        <div class="verdict-card no">
+          <div class="verdict-icon">✗</div>
+          <h3>Bitcoin is NOT Gold</h3>
+          <ul>
+            <li>Extreme daily volatility</li>
+            <li>Inconsistent performance during downturns</li>
+            <li>Weak correlation with traditional hedges</li>
+          </ul>
+        </div>
+        <div class="verdict-card maybe">
+          <div class="verdict-icon">◎</div>
+          <h3>But it has a role</h3>
+          <ul>
+            <li>Diversification in small allocations</li>
+            <li>Growth-driven satellite exposure</li>
+            <li>Non-correlated return stream</li>
+          </ul>
+        </div>
+      </div>
+      <div class="reco-wrap">
+        <h3>Investment Recommendations</h3>
+        <div class="reco-grid">
+          <div class="reco-item">
+            <span class="reco-icon">⚠</span>
+            <p>Avoid over-relying on Bitcoin as an inflation hedge</p>
+          </div>
+          <div class="reco-item">
+            <span class="reco-icon">🏦</span>
+            <p>Use Gold for capital preservation, Bitcoin for speculative satellite exposure</p>
+          </div>
+          <div class="reco-item">
+            <span class="reco-icon">📐</span>
+            <p>Size crypto positions to its volatility profile — small allocations only</p>
+          </div>
+          <div class="reco-item">
+            <span class="reco-icon">📋</span>
+            <p>Policymakers: classify cryptocurrencies as speculative financial instruments</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Dhruthi Suresh &nbsp;·&nbsp; Master of Finance &nbsp;·&nbsp; S4103956</p>
+    <p class="footer-note">Data period: June 2023 – January 2025 &nbsp;·&nbsp; Assets: BTC, ETH, Gold, S&amp;P 500</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
